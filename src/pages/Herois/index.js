@@ -119,33 +119,33 @@ const count = [
 
   </div>
           <ul>
-            <li><img src={foto1} /></li>
-            <li><img src={foto2} /></li>
-            <li><img src={foto3} /></li>
-            <li><img src={foto4} /></li>
-            <li><img src={foto5} /></li>
-            <li><img src={foto6} /></li>
-            <li><img src={foto7} /></li>
-            <li><img src={foto8} /></li>
-            <li><img src={foto9} /></li>
-            <li><img src={foto10} /></li>
-            <li><img src={foto11} /></li>
-            <li><img src={foto12} /></li>
-            <li><img src={foto13} /></li>
-            <li><img src={foto14} /></li>
-            <li><img src={foto15} /></li>
-            <li><img src={foto16} /></li>
-            <li><img src={foto17} /></li>
-            <li><img src={foto18} /></li>
-            <li><img src={foto19} /></li>
-            <li><img src={foto20} /></li>
-            <li><img src={foto21} /></li>
-            <li><img src={foto22} /></li>
-            <li><img src={foto23} /></li>
-            <li><img src={foto24} /></li>
-            <li><img src={foto25} /></li>
-            <li><img src={foto26} /></li>
-            <li><img src={foto26} /></li>
+            <li><img src={foto1} alt=""/></li>
+            <li><img src={foto2} alt=""/></li>
+            <li><img src={foto3} alt=""/></li>
+            <li><img src={foto4} alt="" /></li>
+            <li><img src={foto5} alt="" /></li>
+            <li><img src={foto6} alt="" /></li>
+            <li><img src={foto7} alt="" /></li>
+            <li><img src={foto8} alt="" /></li>
+            <li><img src={foto9} alt="" /></li>
+            <li><img src={foto10} alt="" /></li>
+            <li><img src={foto11} alt="" /></li>
+            <li><img src={foto12} alt="" /></li>
+            <li><img src={foto13} alt="" /></li>
+            <li><img src={foto14} alt="" /></li>
+            <li><img src={foto15} alt="" /></li>
+            <li><img src={foto16} alt="" /></li>
+            <li><img src={foto17} alt="" /></li>
+            <li><img src={foto18} alt"" /></li>
+            <li><img src={foto19} alt="" /></li>
+            <li><img src={foto20} alt="" /></li>
+            <li><img src={foto21} alt="" /></li>
+            <li><img src={foto22} alt="" /></li>
+            <li><img src={foto23} alt="" /></li>
+            <li><img src={foto24} alt="" /></li>
+            <li><img src={foto25} alt="" /></li>
+            <li><img src={foto26} alt="" /></li>
+            <li><img src={foto27} alt= "" /></li>
 
           </ul>
         </div>
