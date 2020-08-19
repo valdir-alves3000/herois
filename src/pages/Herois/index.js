@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 
 
 import './styles.css';
-import './slide-stories.js';
+// import './slide-stories.js';
 import './style.css';
 
 import foto1 from '../../assets/foto1.jpg';
