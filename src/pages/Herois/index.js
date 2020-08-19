@@ -5,6 +5,8 @@ import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi';
 
 
 import './styles.css';
+import './slide-stories.js';
+import './style.css';
 
 import foto1 from '../../assets/foto1.jpg';
 import foto2 from '../../assets/foto2.jpg';
@@ -67,26 +69,6 @@ function Herois() {
     foto27
   ];
 
-  function handleSlideShow(e) {
-    
-    if (e == 'rigth') {
-      setImg((prevState) => prevState + 1);
-      if (img >= 27) {
-       setImg( 0 );
-      }
-    } else {
-      setImg((prevState) => prevState - 1);
-
-      if (img <= 0) {
-        setImg( 25 );
-      }
-    }
-
-    document.getElementById('slide-show').src = count[img];
-    //setTimeout(handleSlideShow(), 3000);
-
-  }
-
   return (
     <div id="page-herois">
       <div className="container">
@@ -94,18 +76,20 @@ function Herois() {
 
         <div className="section">
 
-          <div id="slide" >
-            <FiChevronsLeft
-              onClick={() => handleSlideShow('left')}
-              size={20} color="#333" />
-
-            <img id="slide-show" src={foto1} alt="" />
-
-            <FiChevronsRight
-              onClick={() => handleSlideShow('rigth')}
-              size={25} color="#333" />
-
-          </div>
+          <div data-slide="slide" class="slide">
+    <div class="slide-items">
+      <img src={foto1} alt="Img 1">
+      <img src={foto2} alt="Img 2">
+      <img src={foto3} alt="Img 3">
+      <img src={foto4} alt="Img 4">
+      
+    </div>
+    <nav class="slide-nav">
+      <div class="slide-thumb"></div>
+      <button class="slide-prev">Anterior</button>
+      <button class="slide-next">Próximo</button>
+    </nav>
+  </div>
           <ul>
             <li><img src={foto1} /></li>
             <li><img src={foto2} /></li>
