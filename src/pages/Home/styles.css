@@ -1,0 +1,65 @@
+#page-home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+ 
+}
+
+#page-home .content h1 {
+  font-family: 'Fredericka the Great';
+  text-align: center;
+  margin-bottom: 3.0rem;
+  margin-top: 10px;
+  
+}
+
+#page-home .content p {
+  font-size: 3.0rem;
+  font-family: 'Dancing Script';
+  text-indent: 2.0rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+#page-home .content ul {
+  list-style: none;
+  margin-top: 25px;
+}
+
+#page-home .content ul li {
+  background-color: var(--color-background-secondary);
+  box-shadow: 2px 2px #777;
+  border: #777 solid 1px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#page-home .content p span {
+  text-align: center;
+  font-weight: bold;
+}
+
+#page-home .content ul li > p {
+  text-align: center;
+}
+
+#page-home .content ul li p + p {
+  text-align: justify;
+}
+
+#page-home .content ul li img {
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 20px;
+}

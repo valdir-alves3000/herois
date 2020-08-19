@@ -1,0 +1,49 @@
+#page-herois {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+}
+ 
+#slide {
+  width: 100%;
+  max-width: 600px;
+  height: 35.0rem;
+  border: 1px dashed  #777;
+  border-radius: 20px; 
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slide-show {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.slide svg {
+  margin: 8px;
+  cursor: pointer;
+}
+
+
+.section ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.section ul li img {
+  width: 350px;
+  border-radius: 20px;
+}

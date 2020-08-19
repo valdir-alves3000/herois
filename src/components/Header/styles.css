@@ -1,0 +1,28 @@
+header {
+  text-align: end;
+  height: 12.0rem;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-background-secondary);
+  margin: 20px;
+ 
+}
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 15px 0;
+  
+}
+
+header ul li p {
+  margin-right: 2.0rem;
+  color:var(--color-title-in-primary);
+}
+
+header p.active, header p:hover {
+  color: #333;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
