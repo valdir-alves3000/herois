@@ -9,34 +9,27 @@ export default function Header() {
   const [pageActive, setPageActive] = useState('home');
 
   function handlePage(event) {   
-    const home = document.querySelector('#home');
-    const herois = document.querySelector('#herois');
-
-    if(event == 'home') {
-      home.setAttribute('class', 'active');
-      herois.removeAttribute('class', 'active');
+    
+    if(event === 'home') {
+      setPageActive(prev => 'home');
 
       history.push('/');
     } else {
-      herois.setAttribute('class', 'active');
-      home.removeAttribute('class', 'active');
-
+      setPageActive(prev => 'herois');
       history.push('/herois');
     }
 
   }
-  function activeScreen(event) {
-    document.querySelector(`#${event}`).setAttribute('class', 'active');
-  }
+  
   return (
     <header className="header">
       <img src={logoImg} alt="" width="50px" />
       <ul>
         <li>
-          <p id="home" className="active" onClick={() => handlePage('home')}>Home</p>
+          <p id="home" className={pageActive === 'home' ? 'active' : ''} onClick={() => handlePage('home')}>Home</p>
         </li>
         <li>
-          <p id="herois" onClick={() => handlePage('herois')}>Coleção de Heróis</p>
+          <p id="herois"  className={pageActive === 'herois' ? 'active' : ''} onClick={() => handlePage('herois')}>Coleção de Heróis</p>
         </li>
       </ul>
 
