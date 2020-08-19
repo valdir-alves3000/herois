@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Header from '../../components/Header';
-import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi';
+//import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi';
 
 
 import './styles.css';
@@ -38,8 +38,11 @@ import foto26 from '../../assets/foto26.jpeg';
 
 function Herois() {
   localStorage.setItem('screen', 'herois');
-  const [img, setImg] = useState(1);
-  const count = [
+
+  /*
+const [img, setImg] = useState(1);
+  
+const count = [
     foto1,
     foto2,
     foto3,
@@ -68,6 +71,7 @@ function Herois() {
     foto26,
     foto27
   ];
+*/
 
   return (
     <div id="page-herois">
