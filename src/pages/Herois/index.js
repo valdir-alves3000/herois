@@ -85,30 +85,30 @@ const count = [
       <img src={foto1} alt="Img 1" />
       <img src={foto2} alt="Img 2" />
       <img src={foto3} alt="Img 3" />
-      <img src={foto4} alt="Img 4" />
-      <img src={foto5} />
-      <img src={foto6} />
-      <img src={foto7} />
-      <img src={foto8} />
-      <img src={foto9} />
-      <img src={foto10} />
-      <img src={foto11} />
-      <img src={foto12} />
-      <img src={foto13} />
-      <img src={foto14} />
-      <img src={foto15} />
-      <img src={foto16} />
-      <img src={foto17} />
-      <img src={foto19} />
-      <img src={foto18} />
-      <img src={foto20} />
-      <img src={foto21} />
-      <img src={foto22} />
-      <img src={foto23} />
-      <img src={foto24} />
-      <img src={foto25} />
-      <img src={foto26} />
-      <img src={foto27} />
+      <img src={foto4} alt="" />
+      <img src={foto5} alt=""/>
+      <img src={foto6} alt="" />
+      <img src={foto7} alt="" />
+      <img src={foto8} alt=""/>
+      <img src={foto9} alt=""/>
+      <img src={foto10} alt=""/>
+      <img src={foto11} alt=""/>
+      <img src={foto12} alt=""/>
+      <img src={foto13} alt=""/>
+      <img src={foto14} alt=""/>
+      <img src={foto15} alt=""/>
+      <img src={foto16} alt=""/>
+      <img src={foto17} alt=""/>
+      <img src={foto19} alt=""/>
+      <img src={foto18} alt=""/>
+      <img src={foto20} alt=""/>
+      <img src={foto21} alt=""/>
+      <img src={foto22} alt=""/>
+      <img src={foto23} alt=""/>
+      <img src={foto24} alt=""/>
+      <img src={foto25} alt=""/>
+      <img src={foto26} alt=""/>
+      <img src={foto27} alt=""/>
 
 </div>
     <nav class="slide-nav">
