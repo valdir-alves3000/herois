@@ -1,6 +1,6 @@
 class SlideStories {
   constructor(id) {
-    this.slide = document.querySelector(`[data-slide="${id}"]`);
+    this.slide = document.querySelector(`#${id}`);
     this.active = 0;
     this.init();
   }
