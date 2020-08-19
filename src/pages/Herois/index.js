@@ -76,7 +76,7 @@ function Herois() {
 
         <div className="section">
 
-          <div data-slide="slide" class="slide">
+          <div id="slide" class="slide">
     <div class="slide-items">
       <img src={foto1} alt="Img 1">
       <img src={foto2} alt="Img 2">
@@ -87,6 +87,7 @@ function Herois() {
       <button class="slide-prev">Anterior</button>
       <button class="slide-next">Próximo</button>
     </nav>
+
   </div>
           <ul>
             <li><img src={foto1} /></li>
