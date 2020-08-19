@@ -1,8 +1,6 @@
-body {
-  background: #1b1d20;
-}
 
-img {
+
+.slide-itens img {
   max-width: 100%;
   display: block;
 }
