@@ -3,6 +3,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "revision": "69ac5f2c6377f5546334de193cda7b77",
     "url": "/index.html"
   },
+  
   {
     "revision": "4744c94f720df25fc82f",
     "url": "/static/css/main.fca8e1a2.chunk.css"
