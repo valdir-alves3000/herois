@@ -81,9 +81,7 @@ function Herois() {
       <img src={foto1} alt="Img 1">
       <img src={foto2} alt="Img 2">
       <img src={foto3} alt="Img 3">
-      <img src={foto4} alt="Img 4">
-      
-    </div>
+      <img src={foto4} alt="Img 4"></div>
     <nav class="slide-nav">
       <div class="slide-thumb"></div>
       <button class="slide-prev">Anterior</button>
