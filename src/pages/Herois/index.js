@@ -86,6 +86,30 @@ const count = [
       <img src={foto2} alt="Img 2" />
       <img src={foto3} alt="Img 3" />
       <img src={foto4} alt="Img 4" />
+      <img src={foto5} />
+      <img src={foto6} />
+      <img src={foto7} />
+      <img src={foto8} />
+      <img src={foto9} />
+      <img src={foto10} />
+      <img src={foto11} />
+      <img src={foto12} />
+      <img src={foto13} />
+      <img src={foto14} />
+      <img src={foto15} />
+      <img src={foto16} />
+      <img src={foto17} />
+      <img src={foto19} />
+      <img src={foto18} />
+      <img src={foto20} />
+      <img src={foto21} />
+      <img src={foto22} />
+      <img src={foto23} />
+      <img src={foto24} />
+      <img src={foto25} />
+      <img src={foto26} />
+      <img src={foto27} />
+
 </div>
     <nav class="slide-nav">
       <div class="slide-thumb"></div>
@@ -99,7 +123,7 @@ const count = [
             <li><img src={foto2} /></li>
             <li><img src={foto3} /></li>
             <li><img src={foto4} /></li>
-            <li><img src={foto4} /></li>
+            <li><img src={foto5} /></li>
             <li><img src={foto6} /></li>
             <li><img src={foto7} /></li>
             <li><img src={foto8} /></li>
@@ -121,6 +145,8 @@ const count = [
             <li><img src={foto24} /></li>
             <li><img src={foto25} /></li>
             <li><img src={foto26} /></li>
+            <li><img src={foto26} /></li>
+
           </ul>
         </div>
       </div>
