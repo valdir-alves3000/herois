@@ -136,7 +136,7 @@ const count = [
             <li><img src={foto15} alt="" /></li>
             <li><img src={foto16} alt="" /></li>
             <li><img src={foto17} alt="" /></li>
-            <li><img src={foto18} alt"" /></li>
+            <li><img src={foto18} alt="" /></li>
             <li><img src={foto19} alt="" /></li>
             <li><img src={foto20} alt="" /></li>
             <li><img src={foto21} alt="" /></li>
@@ -145,7 +145,7 @@ const count = [
             <li><img src={foto24} alt="" /></li>
             <li><img src={foto25} alt="" /></li>
             <li><img src={foto26} alt="" /></li>
-            <li><img src={foto27} alt= "" /></li>
+            <li><img src={foto27} alt="" /></li>
 
           </ul>
         </div>
