@@ -40,7 +40,7 @@ function Herois() {
   localStorage.setItem('screen', 'herois');
 
   
-const [img, setImg] = useState(1);
+const [img, setImg] = useState(0);
 const [foto, setFoto] = useState(foto1);
   
 const count = [
@@ -75,11 +75,18 @@ const count = [
 
 
 useEffect(() => {
+     
+If(img > 27 ) {
+setImg(0);
+}
+
     const timer = setTimeout(() => {
-      setFoto(count[img + 1]);
+      setFoto(count[img]);
     }, 3000);
     return () => clearTimeout(timer);
-  }, []);
+
+setImg(prev => prev + 1);
+  }, [img]);
 
   return (
     <div id="page-herois">
