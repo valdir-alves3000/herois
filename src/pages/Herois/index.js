@@ -76,7 +76,7 @@ const count = [
 
 useEffect(() => {
      
-If(img > 27 ) {
+if(img > 27 ) {
 setImg(0);
 }
 
