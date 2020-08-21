@@ -154,4 +154,7 @@ const count = [
   );
 }
 
+ import './slide-stories.js';
+
+
 export default Herois;
