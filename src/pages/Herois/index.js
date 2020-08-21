@@ -136,7 +136,4 @@ useEffect(() => {
   );
 }
 
- import './slide-stories.js';
-
-
 export default Herois;
