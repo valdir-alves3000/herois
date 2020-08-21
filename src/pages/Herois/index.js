@@ -39,9 +39,9 @@ import foto26 from '../../assets/foto26.jpeg';
 function Herois() {
   localStorage.setItem('screen', 'herois');
 
-  /*
-const [img, setImg] = useState(1);
   
+const [img, setImg] = useState(1);
+  /*
 const count = [
     foto1,
     foto2,
@@ -73,6 +73,13 @@ const count = [
   ];
 */
 
+useEffect(() => {
+    const timer = setTimeout(() => {
+      setImg(prev => prev + 1);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div id="page-herois">
       <div className="container">
@@ -82,33 +89,8 @@ const count = [
 
     <div id="slide" class="slide">
     <div class="slide-items">
-      <img src={foto1} alt="Img 1" />
-      <img src={foto2} alt="Img 2" />
-      <img src={foto3} alt="Img 3" />
-      <img src={foto4} alt="" />
-      <img src={foto5} alt=""/>
-      <img src={foto6} alt="" />
-      <img src={foto7} alt="" />
-      <img src={foto8} alt=""/>
-      <img src={foto9} alt=""/>
-      <img src={foto10} alt=""/>
-      <img src={foto11} alt=""/>
-      <img src={foto12} alt=""/>
-      <img src={foto13} alt=""/>
-      <img src={foto14} alt=""/>
-      <img src={foto15} alt=""/>
-      <img src={foto16} alt=""/>
-      <img src={foto17} alt=""/>
-      <img src={foto19} alt=""/>
-      <img src={foto18} alt=""/>
-      <img src={foto20} alt=""/>
-      <img src={foto21} alt=""/>
-      <img src={foto22} alt=""/>
-      <img src={foto23} alt=""/>
-      <img src={foto24} alt=""/>
-      <img src={foto25} alt=""/>
-      <img src={foto26} alt=""/>
-      <img src={foto27} alt=""/>
+      <img src={`foto${img}`} alt={`img ${img}`} />
+      
 
 </div>
     <nav class="slide-nav">
