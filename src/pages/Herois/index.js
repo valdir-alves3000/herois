@@ -41,7 +41,8 @@ function Herois() {
 
   
 const [img, setImg] = useState(1);
-  /*
+const [foto, setFoto] = useState(foto1);
+  
 const count = [
     foto1,
     foto2,
@@ -71,11 +72,11 @@ const count = [
     foto26,
     foto27
   ];
-*/
+
 
 useEffect(() => {
     const timer = setTimeout(() => {
-      setImg(prev => prev + 1);
+      setFoto(count[img + 1]);
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
@@ -89,7 +90,7 @@ useEffect(() => {
 
     <div id="slide" class="slide">
     <div class="slide-items">
-      <img src={`foto${img}`} alt={`img ${img}`} />
+      <img src={foto} alt={`img ${img}`} />
       
 
 </div>
