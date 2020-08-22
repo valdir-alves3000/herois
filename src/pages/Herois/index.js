@@ -1,12 +1,9 @@
-import React, { useState, useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Header from '../../components/Header';
 //import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi';
 
-
 import './styles.css';
-// import './slide-stories.js';
-import './style.css';
 
 import foto1 from '../../assets/foto1.jpg';
 import foto2 from '../../assets/foto2.jpg';
@@ -33,18 +30,15 @@ import foto22 from '../../assets/foto22.jpg';
 import foto23 from '../../assets/foto23.jpg';
 import foto24 from '../../assets/foto24.jpg';
 import foto25 from '../../assets/foto25.jpg';
-import foto27 from '../../assets/foto27.jpg';
-import foto26 from '../../assets/foto26.jpeg';
+import foto26 from '../../assets/foto26.jpg';
+import foto27 from '../../assets/foto27.jpeg';
 
 function Herois() {
   localStorage.setItem('screen', 'herois');
 
-  
-const [img, setImg] = useState(0);
-const [foto, setFoto] = useState(foto1);
-  
-const count = [
-    foto1,
+  const [foto, setFoto] = useState(foto1);
+  const [count, setCount] = useState(0);
+  const img = [    
     foto2,
     foto3,
     foto4,
@@ -70,78 +64,74 @@ const count = [
     foto24,
     foto25,
     foto26,
-    foto27
+    foto27,
+    foto1,
   ];
 
+  useEffect(() => {    
+    setTimeout(() => {
+      next();
+    }, 2000);
+   
+  }, [foto]);
 
-useEffect(() => {
-     
-if(img > 27 ) {
-setImg(0);
-}
+  function next() {
 
-    const timer = setTimeout(() => {
-      setFoto(count[img]);
-    }, 3000);
-    return () => clearTimeout(timer);
+    if(count >= img.length - 1) {
+      setCount(0);
+    } else {
+      setCount(count + 1);     
+    }
 
-setImg(prev => prev + 1);
-  }, [img]);
+    setFoto(img[count]);
+  }
 
-  return (
-    <div id="page-herois">
-      <div className="container">
-        <Header />
+return (
+  
+    <div className="container">
+      <Header />
 
-        <div className="section">
+      <div className="section">
 
-    <div id="slide" class="slide">
-    <div class="slide-items">
-      <img src={foto} alt={`img ${img}`} />
-      
+        <div id="slide" className="slide" >
+          <div className="slide-items">
+            <img src={foto} alt="" width="300px" />
+           
+          </div>
 
-</div>
-    <nav class="slide-nav">
-      <div class="slide-thumb"></div>
-      <button class="slide-prev">Anterior</button>
-      <button class="slide-next">Próximo</button>
-    </nav>
-
-  </div>
-          <ul>
-            <li><img src={foto1} alt=""/></li>
-            <li><img src={foto2} alt=""/></li>
-            <li><img src={foto3} alt=""/></li>
-            <li><img src={foto4} alt="" /></li>
-            <li><img src={foto5} alt="" /></li>
-            <li><img src={foto6} alt="" /></li>
-            <li><img src={foto7} alt="" /></li>
-            <li><img src={foto8} alt="" /></li>
-            <li><img src={foto9} alt="" /></li>
-            <li><img src={foto10} alt="" /></li>
-            <li><img src={foto11} alt="" /></li>
-            <li><img src={foto12} alt="" /></li>
-            <li><img src={foto13} alt="" /></li>
-            <li><img src={foto14} alt="" /></li>
-            <li><img src={foto15} alt="" /></li>
-            <li><img src={foto16} alt="" /></li>
-            <li><img src={foto17} alt="" /></li>
-            <li><img src={foto18} alt="" /></li>
-            <li><img src={foto19} alt="" /></li>
-            <li><img src={foto20} alt="" /></li>
-            <li><img src={foto21} alt="" /></li>
-            <li><img src={foto22} alt="" /></li>
-            <li><img src={foto23} alt="" /></li>
-            <li><img src={foto24} alt="" /></li>
-            <li><img src={foto25} alt="" /></li>
-            <li><img src={foto26} alt="" /></li>
-            <li><img src={foto27} alt="" /></li>
-
-          </ul>
         </div>
-      </div>
+       
+          <img src={foto1} alt="" />
+          <img src={foto2} alt="" />
+          <img src={foto3} alt="" />
+          <img src={foto4} alt="" />
+          <img src={foto5} alt="" />
+          <img src={foto6} alt="" />
+          <img src={foto7} alt="" />
+          <img src={foto8} alt="" />
+          <img src={foto9} alt="" />
+          <img src={foto10} alt="" />
+          <img src={foto11} alt="" />
+          <img src={foto12} alt="" />
+          <img src={foto13} alt="" />
+          <img src={foto14} alt="" />
+          <img src={foto15} alt="" />
+          <img src={foto16} alt="" />
+          <img src={foto17} alt="" />
+          <img src={foto18} alt="" />
+          <img src={foto19} alt="" />
+          <img src={foto20} alt="" />
+          <img src={foto21} alt="" />
+          <img src={foto22} alt="" />
+          <img src={foto23} alt="" />
+          <img src={foto24} alt="" />
+          <img src={foto25} alt="" />
+          <img src={foto26} alt="" />
+          <img src={foto27} alt="" />        
+      
     </div>
-  );
+  </div>
+);
 }
 
 export default Herois;

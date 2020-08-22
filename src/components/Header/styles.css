@@ -11,13 +11,17 @@ header ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  padding: 15px 0;
-  
+  padding: 15px 0;  
+}
+
+a {
+  text-decoration: none;
 }
 
 header ul li p {
   margin-right: 2.0rem;
   color:var(--color-title-in-primary);
+
 }
 
 header p.active, header p:hover {

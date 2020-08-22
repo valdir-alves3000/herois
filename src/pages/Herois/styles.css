@@ -1,49 +1,50 @@
-#page-herois {
-  width: 100vw;
+.container {
+  max-width: 100vw;
   height: 100vh;
 
-  display: flex;
-  justify-content: center;
+  margin: 20px auto;
 }
 
-.section {
+.section {  
   width: 100%;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.section  img {
+  width: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 10px;
+  border-radius: 20px;
 }
  
-#slide {
+.slide {  
   width: 100%;
   max-width: 600px;
   height: 35.0rem;
-  border: 1px dashed  #777;
+  border: 1px solid #777;
   border-radius: 20px; 
   overflow: hidden;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
 }
 
-#slide-show {
-  width: 250px;
+.slide-items {
+  position: relative;
+  grid-area: 1/1 ;
+  overflow: hidden;
+}
+
+.slide-items > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  pointer-events: none;
   border-radius: 20px;
 }
 
-.slide svg {
-  margin: 8px;
-  cursor: pointer;
-}
-
-
-.section ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.section ul li img {
-  width: 350px;
-  border-radius: 20px;
-}

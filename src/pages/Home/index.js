@@ -8,8 +8,8 @@ import Header from '../../components/Header/index';
  export default function Home () {
   localStorage.setItem('screen', 'home');
 
-   return (
-    <div id="page-home">
+  return (
+    <div id="page-home">      
       <div className="container">
        <Header />
        <div className="content">
