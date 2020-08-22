@@ -70,21 +70,16 @@ function Herois() {
 
   useEffect(() => {    
     setTimeout(() => {
-      next();
+      if(count >= img.length - 1) {
+        setCount(0);
+      } else {
+        setCount(count + 1);     
+      }
+  
+      setFoto(img[count]);
     }, 2000);
    
-  }, [foto]);
-
-  function next() {
-
-    if(count >= img.length - 1) {
-      setCount(0);
-    } else {
-      setCount(count + 1);     
-    }
-
-    setFoto(img[count]);
-  }
+  }, [foto, count, img]); 
 
 return (
   
